@@ -30,6 +30,10 @@ context('My Second TEST', () => {
       cy.get('.gLFyf').type('Cypress.io{enter}')
       // cy.get('.gLFyf') : search butonunun locate ini otomatik alabiliyoruz browser uzerinden
       // type('Cypres.io{enter}') : bu kisimda Cypres.io yaz ve enter yap dedim
+     
+     
+      // ****************************** //
+
       // get(): locate aliyoruz
       // type(): metin gonderiyoruz
       // {enter}: ENTER tusuna bas
@@ -44,7 +48,7 @@ context('My Second TEST', () => {
 
     })
 
-    it('Click', () => {
+    it.only('Click', () => {
        
         // it.only: sadece bu testi calistir demek
         cy.get('.gb_Ef').click()

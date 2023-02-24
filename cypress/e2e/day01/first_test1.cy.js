@@ -2,7 +2,7 @@
 
 describe('My First Test', () => {
       // describe: tanımlamak demek. Testi tanimliyorum
-      //describe ve it mocha dan geliyor
+      // describe ve it mocha dan geliyor
 
       // 
     it('URL TEST', () => {
