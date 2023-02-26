@@ -10,7 +10,7 @@ describe('CheckBoxes', () => {
         // first() : Birden fazla web element varsa birinciyi sec demek
         
         cy.get('.sf-with-ul').eq(0).click() 
-        // eq() : bu da birden fazla web element oldugunda istedigimizi secmemizi saglar 
+        // eq() : birden fazla web element oldugunda istedigimizi secmemizi saglar 
         // index ile calisir icine sitedigimiz index i seceriz
         // first() = eq(0) bunlar esittir
 
@@ -67,7 +67,7 @@ describe('CheckBoxes', () => {
         cy.get("input[type='checkbox']").eq(0).uncheck().should('not.be.checked')
 
         // NOT : uncheck(): Tiklamayi kaldirir
-        // should('not.be.checked') : tiklamanin kladirildigini ASSERT eder
+        // should('not.be.checked') : tiklamanin kaldirildigini ASSERT eder
 
         
     })

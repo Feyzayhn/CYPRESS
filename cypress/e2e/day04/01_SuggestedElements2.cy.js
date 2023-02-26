@@ -14,7 +14,7 @@ describe('', () => {
         // parent locate : cy.get('.ac_results')
         // contains('Blouse') => parent'in altindan 'Blouse' yazani tikla 
 
-        cy.get('h1').should('be.visible') // h1 tagi gorunur mu diye dofruladik
+        cy.get('h1').should('be.visible') // h1 tagi gorunur mu diye dogruladik
    
    
     })

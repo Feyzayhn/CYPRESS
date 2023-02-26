@@ -7,7 +7,7 @@ describe('HoverOver', () => {
         cy.visit('https://www.amazon.com/')
         cy.get('.icp-nav-link-inner').trigger('mouseover')
         //trigger() komutu ile mause'un hareketlerini secebiliyoruz 
-        //yukarida mause'u dropdown menunun uzerine getirip bekletyik
+        //yukarida mause'u dropdown menunun uzerine getirip beklettik
 
         cy.wait(3000)
         cy.contains('Change country/region.').click()  // dropdown in altindaki bir yaziya tikladik
