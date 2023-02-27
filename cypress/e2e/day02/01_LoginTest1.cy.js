@@ -34,7 +34,5 @@ describe('Koala Resort Hotel', () => {
 
     })
 
-    it('', () => {
-        
-    })
+    
 })

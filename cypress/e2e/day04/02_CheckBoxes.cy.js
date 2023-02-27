@@ -80,5 +80,18 @@ describe('CheckBoxes', () => {
         cy.get("input[type='checkbox']").click({ multiple: true }) 
         // bu locate 19 tane checkbox var hepsine tek seferde tiklamasini istedigimiz icin
         // Cypress "{ multiple: true }" bunu yazmami istedi
-    })
+
+        /*
+          click() : tek bir web elemente tiklar
+          click({ multiple: true }) : bu sekilde tum web elemntlere tiklar
+        */
+
+          cy.get("input[type='checkbox']").first().parent().should('have.class', 'checked') 
+          // 1. chechkbox a tikladik bunun parent class'i 'checked' iceriyor mu ?
+          
+          cy.get("input[type='checkbox']").parent().should('have.class', 'checked')
+          // 19 checkboxsi tiklanmis mi diye assert etti 
+  
+  
+     })
 })
