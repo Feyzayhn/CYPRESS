@@ -1,0 +1,28 @@
+npx cypress run: Electron headless (browser ı acmadan)  ile butun testleri calistirir
+                 Hata alinan testlerin ekran goruntulerini screenshots klasorune koyar
+                 Butun testlerin video kayitlarini videos kalsorune koyar
+
+npx cypress info: Bilgisayarinizda yüklü browser bilgilerini, cypress versionunu
+                  isletim sistemini, hafiza bilgileri gibi verileri gosterir
+
+npx cypress verify: Cypress'in yuklu oldugunu onaylar
+
+npx cypress run --browser chrome: Chrome headless(browser'i acmadan) ile butun testleri calistirir
+
+npx cypress run --browser chrome --headed: Chrome browser'i acarak butun testleri calistirir
+
+ISTENEN KLASORDEKI TUM TESTLERI CALISTIRMAK
+npx cypress run --spec 'cypress/e2e/day02/'
+* Default olarak Electron ile calistirir
+
+npx cypress run --spec 'cypress/e2e/day02/' --browser chrome
+* day02 klasorundeki butun testleri Chrome headles (browser acmadan) ile calistirir
+
+npx cypress run --spec 'cypress/e2e/day02/' --browser chrome --headed
+* day02 klasorundeki butun testleri Chrome browser'i acarak  calistirir
+
+
+TEK BIR TEST CALISTIRMAK
+
+npx cypress run --spec 'cypress/e2e/day02/01_LoginTest1.cy.js'
+* Default olarak Electron ile calistirir.
