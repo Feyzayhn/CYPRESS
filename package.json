@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:run_day02": "npx cypress run --spec 'cypress/e2e/day02/' --browser chrome",
-    "mycode": "npx cypress run --spec 'cypress/e2e/day03/06_SuperDomain.cy.js' --browser chrome --headed"
+    "mycode": "npx cypress run --spec 'cypress/e2e/day03/06_SuperDomain.cy.js' --browser chrome --headed",
+    "test-dashboard" : "npx cypress run --record --key c834637f-a6d6-49b5-9279-10b30b3eaeb0",
+    "dashboard_day02": "npx cypress run --spec 'cypress/e2e/day02/' --record --key c834637f-a6d6-49b5-9279-10b30b3eaeb0"
   },
   "keywords": [],
   "author": "",
